@@ -1,0 +1,4 @@
+on: push
+jobs:
+  checkout:
+    uses: remarkablemark/github-actions-reusable-workflows-called/.github/workflows/checkout.yml@master
