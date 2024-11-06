@@ -1,0 +1,4 @@
+on: push
+jobs:
+  hello-world:
+    uses: remarkablemark/github-actions-reusable-workflows-called/.github/workflows/hello-world.yml@master
