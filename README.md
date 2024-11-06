@@ -5,6 +5,7 @@ GitHub Actions reusable workflows caller. Calls [`github-actions-reusable-workfl
 - [`hello-world.yml`](.github/workflows/hello-world.yml)
 - [`inputs.yml`](.github/workflows/inputs.yml)
 - [`matrix.yml`](.github/workflows/matrix.yml)
+- [`secrets.yml`](.github/workflows/secrets.yml)
 
 ## Readings
 
