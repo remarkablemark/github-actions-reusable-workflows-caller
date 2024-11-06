@@ -1,0 +1,9 @@
+on: push
+jobs:
+  hello-world:
+    strategy:
+      matrix:
+        name: [John, Mary]
+    uses: remarkablemark/github-actions-reusable-workflows-called/.github/workflows/matrix.yml@master
+    with:
+      name: ${{ matrix.name }}
