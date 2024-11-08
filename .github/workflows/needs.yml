@@ -1,0 +1,12 @@
+on: push
+jobs:
+  job1:
+    uses: remarkablemark/github-actions-reusable-workflows-called/.github/workflows/needs.yml@master
+  job2:
+    needs: job1
+    uses: remarkablemark/github-actions-reusable-workflows-called/.github/workflows/hello-world.yml@master
+  job3:
+    needs: [job1, job2]
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "job3"
